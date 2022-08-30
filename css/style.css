@@ -1,0 +1,356 @@
+
+    /* font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}    
+body {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+    margin: .5rem 0 .75rem ;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-top: 15px;
+}
+
+/* CLASS SELECTOR */
+/* LAYOUT */
+.container {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* HEADER SECTION */
+.header  {
+    position: relative;
+    background:  hsl(193, 100%, 96%) url('/img/bg-hero-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header__title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0 20px;
+}
+
+.header__desc {
+    color: hsl(192, 100%, 9%);
+    width: 85%;
+    margin: auto;
+   
+    line-height: 1.5;
+}
+
+.header__img {
+    width: 80%;
+}
+
+/* LINKS-SECTION */
+.links {
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    border-radius: 25px;
+    color:  hsl(193, 100%, 96%);
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    margin: 30px auto;
+    width: 70%;
+    padding: 14px 14px;
+    transition: ease-in;   
+}
+
+.links:hover,
+.links:focus {
+    opacity: 65%;
+    transform: scale(.975);
+}
+
+/* NAVIGATION-SECTION */
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.free a{
+    font-size: 10px;
+    font-weight: 700;
+   padding: 5px 20px;
+   background-color: white;
+   border: none;
+   border-radius: 30px;
+   transition: ease-in-out 2s;
+   z-index: 100;
+   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.free:hover,
+.free:focus {
+    opacity: 65%;
+}
+
+.svg {
+position: relative;
+right: 100px;
+}
+
+/* CARD-SECTION */
+
+.card {
+    margin: 40px 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px 3px hsl(193, 100%, 96%),
+    2px 2px 3px 3px  hsl(193, 100%, 96%);
+    padding: 50px 25px;
+}
+
+.card:hover,
+.card:focus {
+    transform: scale(1.05);
+}
+
+.card__title {
+    font-size: 1.1rem;
+    padding: 15px;
+}
+
+.card__desc {
+    color:hsl(208, 11%, 55%);
+    line-height: 1.3;
+}
+
+.card__img {
+    margin-bottom: 2.5rem;
+}
+/* CTA SECTION */
+.cta {
+    background-color: #fffdff;
+    padding: 50px 0px ;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0px  rgba(0, 0, 0, 0.1),
+    0px 0px 2px 0px  rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: auto;
+    z-index: 100;
+    position: relative;
+    top: 80px;
+}
+
+.cta .container {
+    padding: 0;
+}
+
+.cta__title {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.cta .links {
+    margin:0 ;
+    width: 50%;
+}
+/* FOOTER SECTION */
+.footer {
+    background-color: hsl(192, 100%, 9%);
+    padding-top: 70px;
+    text-align: start;
+    color:hsl(210, 10%, 80%);
+    font-size: 12px;  
+}
+
+.footer__desc {
+   padding-left: 10px;
+   margin: 10px 0;
+   line-height: 1.5;
+}
+.footer-div {
+    display: flex;
+    text-align: start;
+    padding-right: 20px;
+}
+
+.footer-div svg {
+    position: relative;
+    top: 13px;
+}
+
+.footer__logo {
+    padding: 0;
+    margin: 0;
+    top: 10px;
+}
+
+.footer a {
+    color:hsl(210, 10%, 80%);
+}
+
+.footer a:hover,
+.footer a:focus {
+    text-decoration: underline;
+    transition: ease-in;
+}
+
+div+ul {
+    margin-top: 25px;
+}
+.footer__ul{
+    text-align: start;
+}
+
+.footer__icon {
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 10px;
+}
+.fa-brands {
+    padding: 0 3px;
+}
+
+.fa-brands:hover,
+.fa-brands:focus {
+   color:  hsl(322, 100%, 66%);
+   transition: ease-in;
+   cursor: pointer;
+}
+
+@media (min-width :675px){
+    /* LAYOUT-SECTION */
+    .container {
+        width: 95%;
+        max-width: 1100px;
+        margin: 0 auto;
+        text-align: start;
+       
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 100px;
+        text-align: start;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    /* HEADER-SECTION */
+    .header { 
+        background: url("/img/bg-hero-desktop.svg"),  hsl(193, 100%, 96%);
+        height: 500px;
+    }
+    
+    .header .grid {
+        align-items: center;
+        
+        gap: 30px;
+    }
+    .header .grid {
+        grid-template-columns: 45% 55%;
+    }
+    .header__img {
+        width: 100%;
+    }
+    .header__title {
+        width: 65%;
+        line-height: 1.5;
+        padding: 50px 0 10px;
+    }
+    .header__desc {
+        padding: 0;
+        width: 90%;
+        margin: 0;
+        
+    }
+    .links {
+        text-align: center;
+        width: 50%;
+        margin-top: 20px;
+    }
+    /* CARD-SECTION */
+    
+    .grid .card__img {
+        grid-template-columns: 30%;
+    }
+
+    .grid~div {
+        grid-template-columns: 70%;
+    }
+
+    .card__img {
+        width: 80%;
+        margin: auto;
+        order: 2;
+    }
+
+    .card__title{
+        padding: 0; 
+    }
+
+   .card .card-div:nth-child(2) {
+    order: 2;
+   }
+
+   /* CTA-SECTION */
+   .cta  {
+    text-align: center;
+    width: 50%;
+   }
+
+   /* FOOTER-GRID */
+   .footer__grid {
+    display: grid;
+    grid-template-columns: 1fr .5fr .5fr .5fr;
+    gap: 50px;
+   }
+
+   div+ul {
+    margin: 0;
+   }
+
+   .footer__grid .class {
+    grid-template-columns: 50%;
+   }
+   
+   .copyright {
+    text-align: end;
+   }
+}
+
+
+
+
+
